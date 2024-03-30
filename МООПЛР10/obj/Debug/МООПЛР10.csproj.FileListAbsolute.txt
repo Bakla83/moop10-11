@@ -1,0 +1,9 @@
+C:\Users\263\source\repos\МООПЛР10\МООПЛР10\bin\Debug\МООПЛР10.exe.config
+C:\Users\263\source\repos\МООПЛР10\МООПЛР10\bin\Debug\МООПЛР10.exe
+C:\Users\263\source\repos\МООПЛР10\МООПЛР10\bin\Debug\МООПЛР10.pdb
+C:\Users\263\source\repos\МООПЛР10\МООПЛР10\obj\Debug\МООПЛР10.csproj.AssemblyReference.cache
+C:\Users\263\source\repos\МООПЛР10\МООПЛР10\obj\Debug\МООПЛР10.Form1.resources
+C:\Users\263\source\repos\МООПЛР10\МООПЛР10\obj\Debug\МООПЛР10.csproj.GenerateResource.cache
+C:\Users\263\source\repos\МООПЛР10\МООПЛР10\obj\Debug\МООПЛР10.csproj.CoreCompileInputs.cache
+C:\Users\263\source\repos\МООПЛР10\МООПЛР10\obj\Debug\МООПЛР10.exe
+C:\Users\263\source\repos\МООПЛР10\МООПЛР10\obj\Debug\МООПЛР10.pdb
