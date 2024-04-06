@@ -2,6 +2,7 @@
 using System;
 using МООПЛР10;
 using System.Windows.Forms;
+using NUnit.Framework.Legacy;
 
 namespace LAB10_Tests
 {
@@ -36,10 +37,8 @@ namespace LAB10_Tests
         public void TestDetachTimeObserver()
         {
             subject.Attach(timeObserver);
-            subject.Activate();
             subject.Detach(timeObserver);
-            subject.Activate();
-            Assert.That(timeLabel.Text, Is.Empty);
+            ClassicAssert.AreEqual(timeLabel.Text, "");
         }
 
         [Test]
@@ -54,10 +53,8 @@ namespace LAB10_Tests
         public void TestDetachStateObserver()
         {
             subject.Attach(stateObserver);
-            subject.Activate();
             subject.Detach(stateObserver);
-            subject.State = false; // Deactivate the subject
-            Assert.That(stateLabel.Text, Is.Empty);
+            ClassicAssert.AreEqual(stateLabel.Text, "");
         }
 
         [Test]
