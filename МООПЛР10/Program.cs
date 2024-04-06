@@ -16,13 +16,13 @@ namespace МООПЛР10
     }
 
     // Интерфейс для наблюдателя
-    interface IObserver
+    public interface IObserver
     {
         void Update(ISubject subject);
     }
 
     // Интерфейс для субъекта
-    interface ISubject
+    public interface ISubject
     {
         void Attach(IObserver observer);
         void Detach(IObserver observer);
@@ -30,7 +30,7 @@ namespace МООПЛР10
     }
 
     // Реализация субъекта
-    class Subject : ISubject
+    public class Subject : ISubject
     {
         private List<IObserver> observers = new List<IObserver>();
         private bool state;
@@ -61,6 +61,7 @@ namespace МООПЛР10
 
         public void Detach(IObserver observer)
         {
+            
             observers.Remove(observer);
         }
 
@@ -81,7 +82,7 @@ namespace МООПЛР10
     }
 
     // Реализация наблюдателя для отображения времени активации субъекта
-    class TimeObserver : IObserver
+    public class TimeObserver : IObserver
     {
         private Label label;
 
@@ -101,7 +102,7 @@ namespace МООПЛР10
     }
 
     // Реализация наблюдателя для отображения текущего состояния субъекта
-    class StateObserver : IObserver
+    public class StateObserver : IObserver
     {
         private Label label;
 

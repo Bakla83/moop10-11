@@ -36,11 +36,10 @@ namespace МООПЛР10
             if (checkBox1.Checked)
             {
                 subject.Attach(timeObserver);
-                subject.Detach(stateObserver);
-                labelState.Text = ""; // Очищаем текст в Label для текущего состояния
             }
             else
             {
+                labelTime.Text = "";
                 subject.Detach(timeObserver);
             }
         }
@@ -50,11 +49,10 @@ namespace МООПЛР10
             if (checkBox2.Checked)
             {
                 subject.Attach(stateObserver);
-                subject.Detach(timeObserver);
-                labelTime.Text = ""; // Очищаем текст в Label для времени активации
             }
             else
             {
+                labelTime.Text = "";
                 subject.Detach(stateObserver);
             }
 
@@ -123,6 +121,11 @@ namespace МООПЛР10
                 stateObserver.Update(subject);
             }
            
+        }
+
+        private void checkBox1_CheckStateChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
